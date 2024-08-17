@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
 
 * {
   padding: 0;
@@ -12,55 +12,11 @@ body {
   background-color: #f8f9fa;
 }
 
-@keyframes slideInFromLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromRight {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInFromTop {
-  from {
-    opacity: 0;
-    transform: translateY(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideInFromBottom {
-  from {
-    opacity: 0;
-    transform: translateY(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
+/* Navbar */
 .navbar {
   border-bottom: 1px solid #d8d3d3;
   padding-left: 5%;
-  background-color: #fff;
-  animation: slideInFromTop 1s ease-out;
+  background-color: #ffffff;
 }
 
 .navbar-nav {
@@ -71,23 +27,23 @@ body {
   margin: 0 15px;
   position: relative;
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
-  border-radius: 30px; /* Membuat sudut yang melengkung seperti tombol */
+  border-radius: 30px; /* Rounded corners */
   padding: 7px;
 }
 
 .nav-link:hover {
-  color: #ffffff; /* Warna teks saat di-hover */
-  background-color: #5b99c2; /* Warna background saat di-hover */
+  color: #ffffff; /* Text color on hover */
+  background-color: #5b99c2; /* Background color on hover */
 }
 
-/* home */
+/* Home Section */
 .home {
   height: 90vh;
 }
 
 .isicontent {
   padding-top: 12%;
-  padding-left: 5%;
+  padding-left: 7%;
 }
 
 .gambarvektor {
@@ -132,15 +88,14 @@ body {
 
 .fasilitas-item {
   margin-bottom: 30px;
-  animation: slideInFromBottom 1s ease-out;
 }
 
 .card {
   border: none;
   border-radius: 15px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 2px solid #f1f1f1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, margin 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .card:hover {
@@ -161,6 +116,178 @@ body {
 .card-title {
   font-size: 24px;
   font-family: "Poppins", sans-serif;
-  color: #333333;
+  color: #5b99c2;
   margin-bottom: 15px;
+}
+
+/* Testimonial Section */
+.cardcontainer h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: "New Amsterdam", sans-serif;
+  color: #a03030;
+}
+
+.cardcontainer {
+  padding: 5% 10%;
+}
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.star-rating .ri-star-fill {
+  font-size: 1.5rem;
+  margin: 0 2px;
+}
+
+.swiper-slide {
+  width: 30%;
+}
+
+.cardtestimoni {
+  margin: 20px;
+}
+
+/* Turnamen Section */
+.turnamen-section {
+  padding: 60px 5%;
+  background-color: #f8f9fa;
+}
+
+.turnamen-section .section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: "New Amsterdam", sans-serif;
+  color: #a03030;
+}
+
+.turnamen-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow on top and bottom */
+  padding: 30px;
+}
+
+.myTurnamenSwiper {
+  width: 100%;
+  height: auto;
+}
+
+.myTurnamenSwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myTurnamenSwiper .swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Harga Section */
+.harga-section {
+  padding: 60px 5%;
+  background-color: #ffffff;
+}
+
+.harga-section .section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-family: "New Amsterdam", sans-serif;
+  color: #a03030;
+}
+
+.harga-item {
+  margin-bottom: 30px;
+}
+
+.harga-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.harga-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.harga-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.harga-card .card-body {
+  text-align: center;
+  padding: 20px;
+}
+
+.harga-card .card-title {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #5b99c2;
+  margin-bottom: 15px;
+}
+
+.harga-card .btn-primary {
+  background-color: #5b99c2;
+  border-color: #5b99c2;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.harga-card .btn-primary:hover {
+  background-color: #4a80a0;
+  border-color: #4a80a0;
+}
+
+/* Kontak Section */
+.contactcontainer i {
+  color: #5b99c2;
+  margin-right: 10px;
+}
+
+.contact-info {
+  margin-left: 6.5%;
+}
+
+.contactcontainer p {
+  font-size: 1.1em;
+  margin-bottom: 5%;
+}
+
+/* Floating Button Styles */
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none; /* Hidden by default */
+  width: 50px;
+  height: 50px;
+  background-color: #5b99c2;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #4a80a0;
 }

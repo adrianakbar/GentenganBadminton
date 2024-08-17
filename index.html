@@ -14,12 +14,19 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="icon" href="assets/Logo.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg sticky-top">
       <div class="container-fluid">
         <img src="assets/Logo.png" alt="Logo Kos" width="80px" />
@@ -38,65 +45,84 @@
           <div class="navbar-nav">
             <a class="nav-link" href="#fasilitas">Fasilitas</a>
             <a class="nav-link" href="#testimoni">Testimoni</a>
-            <a class="nav-link" href="#tournament">Tournament</a>
+            <a class="nav-link" href="#turnamen">Turnamen</a>
             <a class="nav-link" href="#harga">Harga</a>
             <a class="nav-link" href="#kontak">Kontak</a>
           </div>
         </div>
       </div>
     </nav>
-    <!-- navbar end -->
+    <!-- Navbar End -->
 
-    <!-- content -->
-    <div class="container-fluid home">
+    <!-- Home Section -->
+    <div class="container-fluid home" data-aos="fade-down">
       <div class="row">
         <div class="col-md-6 isicontent">
           <div class="content">
             <h3>Gentengan <span>Badminton</span></h3>
             <p>
               Gentengan Badminton adalah tempat yang menyediakan fasilitas
-              bermain badminton yang nyaman dan aman. Dengan harga yang terjangkau
-              dan fasilitas yang lengkap, Gentengan Badminton menjadi tempat yang
-              cocok untuk bermain badminton bersama teman-teman.
+              bermain badminton yang nyaman dan aman. Dengan harga yang
+              terjangkau dan fasilitas yang lengkap, Gentengan Badminton menjadi
+              tempat yang cocok untuk bermain badminton bersama teman-teman.
             </p>
           </div>
         </div>
         <div class="col-md-6 gambarvektor">
-          <img src="assets/Vectorawal.png" alt="Badminton" class="img-fluid" width="450px" />
+          <img
+            src="assets/Vectorawal.png"
+            alt="Badminton"
+            class="img-fluid"
+            width="450px"
+          />
         </div>
       </div>
     </div>
-    <!-- content end -->
+    <!-- Home Section End -->
 
     <!-- Fasilitas Section -->
     <section id="fasilitas" class="fasilitas-section">
       <div class="container">
         <h2 class="section-title">Fasilitas</h2>
-        <div class="row">
+        <div class="row" data-aos="fade-up">
           <div class="col-md-4 fasilitas-item">
             <div class="card">
               <img src="assets/Toilet.jpg" class="card-img-top" alt="Toilet" />
               <div class="card-body">
                 <h4 class="card-title">Toilet</h4>
-                <p class="card-text">Toilet yang bersih dan nyaman tersedia untuk para pemain.</p>
+                <p class="card-text">
+                  Toilet yang bersih dan nyaman tersedia untuk para pemain.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 fasilitas-item">
             <div class="card">
-              <img src="assets/lapangan.jpg" class="card-img-top" alt="Lapangan" />
+              <img
+                src="assets/lapangan.jpg"
+                class="card-img-top"
+                alt="Lapangan"
+              />
               <div class="card-body">
                 <h4 class="card-title">Lapangan</h4>
-                <p class="card-text">Lapangan badminton yang berkualitas dan selalu terawat.</p>
+                <p class="card-text">
+                  Lapangan badminton yang berkualitas dan selalu terawat.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 fasilitas-item">
             <div class="card">
-              <img src="assets/Mushola.jpg" class="card-img-top" alt="Mushola" />
+              <img
+                src="assets/Mushola.jpg"
+                class="card-img-top"
+                alt="Mushola"
+              />
               <div class="card-body">
                 <h4 class="card-title">Mushola</h4>
-                <p class="card-text">Mushola yang nyaman untuk ibadah para pengunjung.</p>
+                <p class="card-text">
+                  Mushola yang nyaman untuk ibadah para pengunjung.
+                </p>
               </div>
             </div>
           </div>
@@ -105,24 +131,519 @@
               <img src="assets/Kantin.jpg" class="card-img-top" alt="Kantin" />
               <div class="card-body">
                 <h4 class="card-title">Kantin</h4>
-                <p class="card-text">Kantin dengan berbagai pilihan makanan dan minuman tersedia.</p>
+                <p class="card-text">
+                  Kantin dengan berbagai pilihan makanan dan minuman tersedia.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 fasilitas-item">
             <div class="card">
-              <img src="assets/Parkir.jpg" class="card-img-top" alt="Tempat Parkir" />
+              <img
+                src="assets/Parkir.jpg"
+                class="card-img-top"
+                alt="Tempat Parkir"
+              />
               <div class="card-body">
                 <h4 class="card-title">Tempat Parkir</h4>
-                <p class="card-text">Area parkir yang luas dan aman untuk kendaraan pengunjung.</p>
+                <p class="card-text">
+                  Area parkir yang luas dan aman untuk kendaraan pengunjung.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Fasilitas Section end -->
+    <!-- Fasilitas Section End -->
 
+    <!-- Testimoni Section -->
+    <div class="container-fluid cardcontainer" id="testimoni">
+      <h2 class="section-title">Testimoni</h2>
+      <div class="swiper mySwiper" data-aos="fade-down">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card text-center cardtestimoni">
+              <div class="card-body">
+                <img
+                  src="assets/Testimoni1.png"
+                  alt="Profile 1"
+                  class="rounded-circle mb-3"
+                  width="90px"
+                  height="90px"
+                />
+                <p class="card-text">
+                  "Lapangannya bersih dan pencahayaannya sangat baik. Sangat
+                  nyaman bermain di sini."
+                </p>
+                <h5>- Wildan</h5>
+                <div class="star-rating">
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card text-center cardtestimoni">
+              <div class="card-body">
+                <img
+                  src="assets/Testimoni2.jpeg"
+                  alt="Profile 2"
+                  class="rounded-circle mb-3"
+                  width="90px"
+                  height="90px"
+                />
+                <p class="card-text">
+                  "Saya sering mengadakan latihan di Gentengan Badminton.
+                  Tempatnya sangat nyaman dan fasilitasnya lengkap."
+                </p>
+                <h5>- Zainun</h5>
+                <div class="star-rating">
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card text-center cardtestimoni">
+              <div class="card-body">
+                <img
+                  src="assets/Testimoni3.jpeg"
+                  alt="Profile 3"
+                  class="rounded-circle mb-3"
+                  width="90px"
+                  height="90px"
+                />
+                <p class="card-text">
+                  "Tempat ini sangat strategis dan fasilitas pendukung seperti
+                  kantin dan tempat parkir sangat memudahkan."
+                </p>
+                <h5>- Mikail</h5>
+                <div class="star-rating">
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card text-center cardtestimoni">
+              <div class="card-body">
+                <img
+                  src="assets/Testimoni4.jpeg"
+                  alt="Profile 4"
+                  class="rounded-circle mb-3"
+                  width="90px"
+                  height="90px"
+                />
+                <p class="card-text">
+                  "Lapangan di Gentengan Badminton selalu terawat dengan baik.
+                  Saya merasa puas dengan pelayanan di sini."
+                </p>
+                <h5>- Mulya</h5>
+                <div class="star-rating">
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card text-center cardtestimoni">
+              <div class="card-body">
+                <img
+                  src="assets/Testimoni5.jpeg"
+                  alt="Profile 5"
+                  class="rounded-circle mb-3"
+                  width="90px"
+                  height="90px"
+                />
+                <p class="card-text">
+                  "Pelayanan di Gentengan Badminton sangat baik, dan tempat ini
+                  cocok untuk bermain maupun mengadakan turnamen kecil."
+                </p>
+                <h5>- Verry</h5>
+                <div class="star-rating">
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card text-center cardtestimoni">
+              <div class="card-body">
+                <img
+                  src="assets/Testimoni6.jpeg"
+                  alt="Profile 6"
+                  class="rounded-circle mb-3"
+                  width="90px"
+                  height="90px"
+                />
+                <p class="card-text">
+                  "Lokasi Gentengan Badminton sangat mudah dijangkau. Sangat
+                  cocok untuk pemain dari berbagai kalangan."
+                </p>
+                <h5>- Ady</h5>
+                <div class="star-rating">
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card text-center cardtestimoni">
+              <div class="card-body">
+                <img
+                  src="assets/Testimoni7.jpeg"
+                  alt="Profile 7"
+                  class="rounded-circle mb-3"
+                  width="90px"
+                  height="90px"
+                />
+                <p class="card-text">
+                  "Saya selalu menikmati waktu bermain badminton di sini.
+                  Fasilitasnya lengkap dan harganya terjangkau."
+                </p>
+                <h5>- Rastian</h5>
+                <div class="star-rating">
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                  <i class="ri-star-fill" style="color: #ffd700"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimoni Section End -->
+
+    <!-- Turnamen Section -->
+    <section id="turnamen" class="turnamen-section">
+      <div class="container">
+        <h2 class="section-title">Turnamen</h2>
+        <div class="turnamen-card" data-aos="fade-up">
+          <div class="swiper myTurnamenSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="assets/Turnamen1.jpeg"
+                  alt="Turnamen 1"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/Turnamen3.jpeg"
+                  alt="Turnamen 2"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/Turnamen1.jpeg"
+                  alt="Turnamen 3"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/Turnamen3.jpeg"
+                  alt="Turnamen 4"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/Turnamen1.jpeg"
+                  alt="Turnamen 5"
+                  class="img-fluid"
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="assets/Turnamen3.jpeg"
+                  alt="Turnamen 6"
+                  class="img-fluid"
+                />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Turnamen Section End -->
+
+    <!-- Harga Section -->
+    <section id="harga" class="harga-section">
+      <div class="container">
+        <h2 class="section-title">Harga</h2>
+        <div class="row justify-content-center" data-aos="fade-down">
+          <!-- Lapangan 1 Card -->
+          <div class="col-md-5 harga-item">
+            <div class="card harga-card">
+              <img
+                src="assets/Lapangan1.jpg"
+                class="card-img-top"
+                alt="Lapangan 1"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Lapangan 1</h4>
+                <p class="card-text">Pilih tanggal dan waktu bermain.</p>
+                <div class="row mb-3">
+                  <div class="col-12">
+                    <label for="date1" class="form-label">Tanggal</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date1"
+                      lang="id"
+                    />
+                    <small
+                      id="formattedDate1"
+                      class="form-text text-muted"
+                    ></small>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="startTime1" class="form-label">Dari Jam</label>
+                    <select class="form-select" id="startTime1">
+                      <option value="06">06:00</option>
+                      <option value="07">07:00</option>
+                      <option value="08">08:00</option>
+                      <option value="09">09:00</option>
+                      <option value="10">10:00</option>
+                      <option value="11">11:00</option>
+                      <option value="12">12:00</option>
+                      <option value="13">13:00</option>
+                      <option value="14">14:00</option>
+                      <option value="15">15:00</option>
+                      <option value="16">16:00</option>
+                      <option value="17">17:00</option>
+                      <option value="18">18:00</option>
+                      <option value="19">19:00</option>
+                      <option value="20">20:00</option>
+                      <option value="21">21:00</option>
+                      <option value="22">22:00</option>
+                      <option value="23">23:00</option>
+                    </select>
+                    <small
+                      id="formattedStartTime1"
+                      class="form-text text-muted"
+                    ></small>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="endTime1" class="form-label">Sampai Jam</label>
+                    <select class="form-select" id="endTime1">
+                      <option value="06">06:00</option>
+                      <option value="07">07:00</option>
+                      <option value="08">08:00</option>
+                      <option value="09">09:00</option>
+                      <option value="10">10:00</option>
+                      <option value="11">11:00</option>
+                      <option value="12">12:00</option>
+                      <option value="13">13:00</option>
+                      <option value="14">14:00</option>
+                      <option value="15">15:00</option>
+                      <option value="16">16:00</option>
+                      <option value="17">17:00</option>
+                      <option value="18">18:00</option>
+                      <option value="19">19:00</option>
+                      <option value="20">20:00</option>
+                      <option value="21">21:00</option>
+                      <option value="22">22:00</option>
+                      <option value="23">23:00</option>
+                    </select>
+                    <small
+                      id="formattedEndTime1"
+                      class="form-text text-muted"
+                    ></small>
+                  </div>
+                </div>
+                <a
+                  href="https://wa.me/yourphonenumber?text=Saya%20ingin%20booking%20Lapangan%201%20pada%20tanggal%20dan%20jam%20tersebut"
+                  class="btn btn-primary mt-3"
+                  target="_blank"
+                  >Booking Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Lapangan 2 Card -->
+          <div class="col-md-5 harga-item">
+            <div class="card harga-card">
+              <img
+                src="assets/Lapangan2.jpg"
+                class="card-img-top"
+                alt="Lapangan 2"
+              />
+              <div class="card-body">
+                <h4 class="card-title">Lapangan 2</h4>
+                <p class="card-text">Pilih tanggal dan waktu bermain.</p>
+                <div class="row mb-3">
+                  <div class="col-12">
+                    <label for="date2" class="form-label">Tanggal</label>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="date2"
+                      lang="id"
+                    />
+                    <small
+                      id="formattedDate2"
+                      class="form-text text-muted"
+                    ></small>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="startTime2" class="form-label">Dari Jam</label>
+                    <select class="form-select" id="startTime2">
+                      <option value="06">06:00</option>
+                      <option value="07">07:00</option>
+                      <option value="08">08:00</option>
+                      <option value="09">09:00</option>
+                      <option value="10">10:00</option>
+                      <option value="11">11:00</option>
+                      <option value="12">12:00</option>
+                      <option value="13">13:00</option>
+                      <option value="14">14:00</option>
+                      <option value="15">15:00</option>
+                      <option value="16">16:00</option>
+                      <option value="17">17:00</option>
+                      <option value="18">18:00</option>
+                      <option value="19">19:00</option>
+                      <option value="20">20:00</option>
+                      <option value="21">21:00</option>
+                      <option value="22">22:00</option>
+                      <option value="23">23:00</option>
+                    </select>
+                    <small
+                      id="formattedStartTime2"
+                      class="form-text text-muted"
+                    ></small>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="endTime2" class="form-label">Sampai Jam</label>
+                    <select class="form-select" id="endTime2">
+                      <option value="06">06:00</option>
+                      <option value="07">07:00</option>
+                      <option value="08">08:00</option>
+                      <option value="09">09:00</option>
+                      <option value="10">10:00</option>
+                      <option value="11">11:00</option>
+                      <option value="12">12:00</option>
+                      <option value="13">13:00</option>
+                      <option value="14">14:00</option>
+                      <option value="15">15:00</option>
+                      <option value="16">16:00</option>
+                      <option value="17">17:00</option>
+                      <option value="18">18:00</option>
+                      <option value="19">19:00</option>
+                      <option value="20">20:00</option>
+                      <option value="21">21:00</option>
+                      <option value="22">22:00</option>
+                      <option value="23">23:00</option>
+                    </select>
+                    <small
+                      id="formattedEndTime2"
+                      class="form-text text-muted"
+                    ></small>
+                  </div>
+                </div>
+                <a
+                  href="https://wa.me/yourphonenumber?text=Saya%20ingin%20booking%20Lapangan%202%20pada%20tanggal%20dan%20jam%20tersebut"
+                  class="btn btn-primary mt-3"
+                  target="_blank"
+                  >Booking Sekarang</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Harga Section End -->
+
+    <!-- Kontak Section -->
+    <div class="container-fluid contactcontainer" id="kontak">
+      <div class="container py-5">
+        <h2 class="section-title">Kontak</h2>
+        <div class="row mt-4" data-aos="fade-up">
+          <div class="col-md-6 mb-4">
+            <p>
+              <i class="ri-map-pin-line ri-lg"></i> Lokasi: <br /><span
+                class="contact-info"
+                >Gentengan Badminton Hall and Cafe</span
+              ><hr />
+            </p>
+            <p>
+              <i class="ri-time-line ri-lg"></i> Jam Buka: <br /><span
+                class="contact-info"
+                >Senin - Minggu: 08:00 - 22:00</span
+              ><hr />
+            </p>
+            <p>
+              <i class="ri-mail-line ri-lg"></i> Email: <br /><span
+                class="contact-info"
+                >info@gentenganbadminton.com</span
+              ><hr />
+            </p>
+            <p>
+              <i class="ri-whatsapp-line ri-lg"></i> WhatsApp: <br /><span
+                class="contact-info"
+                >+62 812-3456-7890</span
+              ><hr />
+            </p>
+          </div>
+          <div class="col-md-6 maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15796.012361791605!2d114.3634812!3d-8.2024411!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1457b71e57959%3A0xf94cadf57612a616!2sGentengan%20Badminton%20Hall%20and%20Cafe!5e0!3m2!1sid!2sid!4v1723910611574!5m2!1sid!2sid"
+              width="100%"
+              height="405"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Kontak Section End -->
+
+    <!-- Floating Button -->
+<button id="backToTopBtn" class="back-to-top">
+  <i class="ri-arrow-up-line"></i>
+</button>
+<!-- Floating Button End -->
+
+    <!-- Scripts -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -134,5 +655,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
