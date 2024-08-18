@@ -30,6 +30,14 @@ const turnamenSwiper = new Swiper(".myTurnamenSwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 2,
+    },
+    576: {
+      slidesPerView: 5,
+    },
+  },
 });
 
 document.addEventListener("DOMContentLoaded", function () {

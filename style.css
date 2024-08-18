@@ -291,3 +291,18 @@ body {
 .back-to-top:hover {
   background-color: #4a80a0;
 }
+
+@media (max-width: 576px) {
+  .navbar-nav {
+    margin-left: -5%;
+    text-align: center;
+  }
+
+  .swiper-slide {
+    width: 85%;
+  }
+
+  .back-to-top {
+    margin-right: -6%;
+  }
+}
