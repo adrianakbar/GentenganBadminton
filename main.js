@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const endTime1 = document.getElementById("endTime1");
   const formattedStartTime1 = document.getElementById("formattedStartTime1");
   const formattedEndTime1 = document.getElementById("formattedEndTime1");
+  const bookingButton1 = document.querySelector(".harga-item:nth-child(1) .btn");
 
   // Cache elements for Lapangan 2
   const dateInput2 = document.getElementById("date2");
@@ -56,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const endTime2 = document.getElementById("endTime2");
   const formattedStartTime2 = document.getElementById("formattedStartTime2");
   const formattedEndTime2 = document.getElementById("formattedEndTime2");
+  const bookingButton2 = document.querySelector(".harga-item:nth-child(2) .btn");
 
   // Helper function to format time
   const formatTime = (hour) => {
@@ -64,6 +66,50 @@ document.addEventListener("DOMContentLoaded", function () {
     if (hour >= 15 && hour < 18) return `${hour}:00 Sore`;
     return `${hour}:00 Malam`;
   };
+
+  // Helper function to format date to string
+  const formatDate = (date) => {
+    const options = { day: "2-digit", month: "long", year: "numeric" };
+    return new Date(date).toLocaleDateString("id-ID", options);
+  };
+
+  // Function to generate WhatsApp link for Lapangan 1
+  const generateWhatsAppLink1 = () => {
+    const date = dateInput1.value ? formatDate(dateInput1.value) : "";
+    const startTime = startTime1.value ? formatTime(parseInt(startTime1.value, 10)) : "";
+    const endTime = endTime1.value ? formatTime(parseInt(endTime1.value, 10)) : "";
+
+    const message = `Permisi saya mau booking Lapangan 1 pada tanggal ${date} dari jam ${startTime} sampai jam ${endTime}.`;
+    return `https://wa.me/6285172252910?text=${encodeURIComponent(message)}`;
+  };
+
+  // Function to generate WhatsApp link for Lapangan 2
+  const generateWhatsAppLink2 = () => {
+    const date = dateInput2.value ? formatDate(dateInput2.value) : "";
+    const startTime = startTime2.value ? formatTime(parseInt(startTime2.value, 10)) : "";
+    const endTime = endTime2.value ? formatTime(parseInt(endTime2.value, 10)) : "";
+
+    const message = `Permisi saya mau booking Lapangan 2 pada tanggal ${date} dari jam ${startTime} sampai jam ${endTime}.`;
+    return `https://wa.me/6285172252910?text=${encodeURIComponent(message)}`;
+  };
+
+  // Update the WhatsApp link for Lapangan 1
+  if (bookingButton1) {
+    bookingButton1.addEventListener("click", function (event) {
+      event.preventDefault();
+      const whatsappLink = generateWhatsAppLink1();
+      window.open(whatsappLink, "_blank");
+    });
+  }
+
+  // Update the WhatsApp link for Lapangan 2
+  if (bookingButton2) {
+    bookingButton2.addEventListener("click", function (event) {
+      event.preventDefault();
+      const whatsappLink = generateWhatsAppLink2();
+      window.open(whatsappLink, "_blank");
+    });
+  }
 
   // Format date when selected for Lapangan 1
   if (dateInput1 && formattedDate1) {
